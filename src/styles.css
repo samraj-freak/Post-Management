@@ -1,0 +1,121 @@
+/* styles.css */
+
+/* Page Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #07dffc;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background-color: #f0f0f0; /* Background color for the entire page */
+}
+
+/* Card Styles */
+.card {
+  width: 100%;
+  max-width: 400px;
+  margin: 16px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  background-color: #6e78f7; /* Background color for cards */
+}
+
+.card:nth-child(odd) {
+  background-color: #f76e6e; /* Different background color for odd cards */
+}
+
+.card:nth-child(3n) {
+  background-color: #f7c36e; /* Different background color for cards with index 3n */
+}
+
+.card:nth-child(4n) {
+  background-color: #6ef7a9; /* Different background color for cards with index 4n */
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.cardContent {
+  padding: 16px;
+}
+
+.cardContent h6 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.cardContent p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Search Input Styles */
+.searchInput {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+/* Button Styles */
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Dialog Styles */
+.dialog {
+  min-width: 300px;
+  max-width: 80%;
+}
+
+.dialogTitle {
+  background-color: #f3f6f8;
+  color: #fff;
+  padding: 16px;
+  border-radius: 4px 4px 0 0;
+}
+
+.dialogContent {
+  padding: 16px;
+}
+
+.dialogContentText {
+  margin-bottom: 16px;
+}
+
+/* Header Styles (optional) */
+.header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 16px 0;
+  text-align: center;
+}
+
+/* Footer Styles (optional) */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 16px 0;
+  text-align: center;
+}
